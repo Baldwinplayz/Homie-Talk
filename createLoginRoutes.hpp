@@ -1,0 +1,1 @@
+void createLoginRoutes(crow::SimpleApp &app);
