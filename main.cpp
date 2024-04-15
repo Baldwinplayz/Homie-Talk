@@ -11,6 +11,10 @@ cd "/workspaces/Homie-Talk/" && g++ main.cpp createLoginRoutes.cpp -I"/workspace
 int main() {
 	crow::SimpleApp app;
 
+	CROW_ROUTE(app, "/")([](){
+		return "Hello World";
+	});
+
 	createLoginRoutes(app);
 
 	app.port(3000).multithreaded().run();
