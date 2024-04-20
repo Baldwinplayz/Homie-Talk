@@ -3,9 +3,11 @@
 #include <fstream>
 #include "createLoginRoutes.hpp"
 
+#define ASIO_STANDALONE
+
 /*
 This is the execution command.
-cd "/workspaces/Homie-Talk/" && g++ main.cpp createLoginRoutes.cpp -I"/workspaces/Homie-Talk/include" -pthread -std=c++17 -o main && sudo "/workspaces/Homie-Talk/"main
+cd "./" && g++ main.cpp createLoginRoutes.cpp -I"./include" -pthread -std=c++17 -o main && sudo "./"main  
 */
 
 int main() {
