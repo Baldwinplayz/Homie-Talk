@@ -19,5 +19,8 @@ int main() {
 
 	createLoginRoutes(app);
 
-	app.port(3000).multithreaded().run();
+	app.bindaddr("0.0.0.0")
+	.port(3000)
+	.multithreaded()
+	.run();
 }
