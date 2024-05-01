@@ -1,0 +1,1 @@
+void createStaticFilesRoutes(crow::SimpleApp &app);

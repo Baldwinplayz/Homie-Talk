@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Home Page - Homie Talk</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+		body {
+			margin: 20px;
+			background-color: #434345;
+		}
+		h1 {
+			font-family: helvetica;
+			font-size: 70px;
+			color: #F8F8FF;
+			
+		}    
+		#logo {
+			display: block;
+			padding: 8px; 
+			background-color: #F8F8FF; 
+			margin-left: auto;
+			margin-right: auto;
+			min-width: 100px;
+			max-width: 800px;
+		}
+		.box{
+			display:flex;
+			width:100%;
+			align-items:center;
+			justify-content:center;
+		}
+		.half{
+			display:flex;
+			width:49%;
+			align-items:center;
+			justify-content:center;
+		}
+		.button {
+			transition-duration: 0.4;
+			border-radius: 2px;
+			background-color: #222222; 
+			border: none;
+			color: #F8F8FF;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			width:130px;
+			border: 2px solid #222222;
+		}
+		.button:hover{
+			background-color: #464646; 
+			border: 2px solid #F8F8FF;
+		}
+    </style>
+  </head>
+  <body>
+    <div class="box">	
+        <img src="/staticFiles/images/Homie-Talk.png" alt="Logo" id="logo">
+    </div>	
+	<div class="half">
+	<a href="https:www.google.com">
+        <button class="button">
+            Sign Up
+        </button>
+    </a>
+	</div>
+	<div class="half">
+	<a href="https:www.google.com">
+        <button class="button">
+            Log In
+        </button>
+    </a>
+	</div>
+  </body>
+</html>
