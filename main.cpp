@@ -6,7 +6,7 @@
 
 /*
 This is the execution command.
-cd "./" && g++ main.cpp createRoutes/createLoginRoutes.cpp createRoutes/createStaticFilesRoutes.cpp -I"./include" -pthread -std=c++17 -o main && sudo "./"main  
+cd "./" && sudo g++ main.cpp createRoutes/createLoginRoutes.cpp createRoutes/createStaticFilesRoutes.cpp -I"./include" -pthread -std=c++17 -o main && sudo "./"main  
 */
 
 int main() {
