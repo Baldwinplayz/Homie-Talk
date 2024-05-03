@@ -13,69 +13,67 @@
 			font-family: helvetica;
 			font-size: 70px;
 			color: #F8F8FF;
-			
 		}    
+
 		#logo {
 			display: block;
 			padding: 8px; 
 			background-color: #F8F8FF; 
 			margin-left: auto;
 			margin-right: auto;
-			min-width: 100px;
-			max-width: 800px;
+			width: 80%;
 		}
 		.box{
-			display:flex;
+			display: flex;
 			width:100%;
-			align-items:center;
-			justify-content:center;
-		}
-		.half{
-			display:flex;
-			width:49%;
-			align-items:center;
-			justify-content:center;
+			align-items: center;
+			justify-content: center;
 		}
 		.button {
+			display: inline-block;
 			transition-duration: 0.4;
 			border-radius: 2px;
 			background-color: #222222; 
 			border: none;
+			border-radius: 8px;
 			color: #F8F8FF;
-			padding: 15px 32px;
+			padding: 2% 4%;
+
 			text-align: center;
 			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			width:130px;
+			font-size: clamp(8px,3vw, 16px);
+			margin: 4%;
+			margin-top: calc(128px / 16%);
+			width: 30%;
+			max-width: 200px;
 			border: 2px solid #222222;
+			
 		}
 		.button:hover{
 			background-color: #464646; 
 			border: 2px solid #F8F8FF;
 		}
+		@media only screen and (min-width: 500px) {
+			.button {
+				padding: 16px 32px;
+				margin: 32px 32px;
+			}
+		}
     </style>
   </head>
   <body>
     <div class="box">	
-		<a href>
+		<a href="/">
 			<img src="/staticFiles/images/Homie-Talk.png" alt="Logo" id="logo">
 		</a>
     </div>	
-	<div class="half">
-	<a href="/signup">
-        <button class="button">
-            Sign Up
-        </button>
-    </a>
-	</div>
-	<div class="half">
-	<a href="/login">
-        <button class="button">
-            Log In
-        </button>
-    </a>
+	<div class="box">
+		<button class="button" onclick="window.location.pathname = '/signup';">
+			Sign Up
+		</button>
+		<button class="button" onclick="window.location.pathname = '/login';">
+			Log In
+		</button>
 	</div>
   </body>
 </html>
