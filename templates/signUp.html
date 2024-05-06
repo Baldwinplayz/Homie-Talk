@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Sign Up - Homie Talk</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
             body {
                 background-color: #313338;
@@ -11,9 +13,7 @@
                 text-align: center;
                 align-items: center;
                 margin: auto;
-                margin-top: 100px;
-                min-width: 100px;
-                max-width: 600px;
+                width: clamp(30%, 90%, 600px);
                 border-radius: 8px;
                 padding: 8px;
             }
@@ -22,7 +22,7 @@
                 margin: auto;
                 margin-bottom: 16px;
                 border: none;
-                border-radius: 4px; 
+                border-radius: 8px; 
                 width: calc(100% - 32px);
                 text-align: left;
                 color: white;
@@ -49,7 +49,7 @@
                 width: calc(100% - 16px);
                 height: 35.5px;
                 border: none;
-                border-radius: 4px;
+                border-radius: 16px;
                 margin-top: 40px;
                 background-color: #5865F2;
             }
@@ -59,19 +59,6 @@
             a:link { 
                 text-decoration: none; 
             } 
-            @media only screen and (max-width: 600px) {
-                .signUpDiv {
-                    background-color: #313338;
-                    text-align: center;
-                    align-items: center;
-                    margin: auto;
-                    margin-top: 100px;
-                    min-width: 100px;
-                    max-width: 100%;
-                    border-radius: 8px;
-                    padding: 8px;
-                }
-            }
         </style>
     </head>
     <body>
@@ -87,7 +74,7 @@
                 <p>Confirm Password</p>
                 <input class="signUpInput" type="password" name="passwordConfirm"></input>
                 <button style="color: white; font-family: arial; font-weight: 400;">Sign Up</button>
-                <input type="checkbox" name="acceptedTerm"> <label>I have read and accepted the <a href="/terms">Terms and Conditions</a></label>
+                <input type="checkbox" name="acceptedTerm"> <label>I have read and accepted the <a href="/articles/terms">Terms and Conditions</a></label>
             </form>
         </div>
     </body>
